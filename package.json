@@ -2,8 +2,7 @@
   "name": "express-tutorial",
   "version": "1.0.0",
   "scripts": {
-    "start": "node app.js",
-    "preinstall": "rimraf node_modules"
+    "start": "node app.js"
   },
   "engines":{
     "node": "v10.16.0",
