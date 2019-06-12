@@ -46,7 +46,7 @@ navigator.serviceWorker.register('js/firebase-messaging-sw.js')
 
 // Handle incoming messages
 messaging.onMessage(function(payload) {
-  console.log("Notification received: ", payload);
+  document.write(payload);
   alert(payload.notification.body, payload.notification.title);
 });
 
