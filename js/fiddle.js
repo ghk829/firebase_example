@@ -27,7 +27,7 @@ navigator.serviceWorker.register('js/firebase-messaging-sw.js')
       messaging.getToken()
       .then(function(currentToken) {
         if (currentToken) {
-          alert(currentToken)
+          document.write(currentToken)
           sendTokenToServer(currentToken);
         } else {
           console.log('No Instance ID token available. Request permission to generate one.');
